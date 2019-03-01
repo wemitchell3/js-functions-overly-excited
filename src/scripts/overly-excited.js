@@ -16,6 +16,7 @@ function addExcitement(theWordArray, punc) {
         // locate every thrid word and add punctionation
         // give the ability to custom add any character for punctuation
         if ((i + 1) % 3 === 0 && i !== 0){
+
             buildMeUp += theWordArray[i] + punc + " ";
           } else{
             buildMeUp += theWordArray[i] + " ";  
@@ -25,4 +26,6 @@ function addExcitement(theWordArray, punc) {
     }
 }
 // Invoke the function and pass in the array
+
 addExcitement(sentence, "+")
+
