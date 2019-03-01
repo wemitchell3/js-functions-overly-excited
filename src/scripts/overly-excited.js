@@ -12,10 +12,16 @@ function addExcitement(theWordArray) {
     let buildMeUp = ""
 
     for (i = 0; i < theWordArray.length; i++) {
-      // Concatenate the new word onto buildMeUp
-      buildMeUp += theWordArray[i] + " ";  
-      // Print buildMeUp to the console
-      console.log(buildMeUp);
+        // Concatenate the new word onto buildMeUp
+        // locate every thrid word and add punctionation
+        // give the ability to custom add any character for punctuation
+        if ((i + 1) % 3 === 0 && i !== 0){
+            buildMeUp += theWordArray[i] + "!" + " ";
+          } else{
+            buildMeUp += theWordArray[i] + " ";  
+          }
+          console.log(buildMeUp);
+        // Print buildMeUp to the console
     }
 }
 // Invoke the function and pass in the array
